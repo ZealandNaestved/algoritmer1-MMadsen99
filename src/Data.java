@@ -27,4 +27,19 @@ public class Data {
         System.out.print("}");
     }
 
+    public int[] getRandomNumbers1000() {
+        return randomNumbers1000;
+    }
+
+    public int[] getRandomNumbers10() {
+        return randomNumbers10;
+    }
+
+    public String[] getRandomPigeNavne() {
+        return randomPigeNavne;
+    }
+
+    public String[] getRandomDrengeNavne() {
+        return randomDrengeNavne;
+    }
 }
