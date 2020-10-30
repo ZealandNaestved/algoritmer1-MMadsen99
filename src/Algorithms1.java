@@ -70,7 +70,7 @@ public class Algorithms1 {
     // TODO 5 - Skriv en randomName() metode i Algorithms1, som laver et sammenlagt array som indeholder både piger og drenge, og returnerer det
 
     public static void randomName() {
-
+    //
 
     }
 
