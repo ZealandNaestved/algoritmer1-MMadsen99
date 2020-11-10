@@ -11,7 +11,17 @@ class Algorithms1Test {
     assertEquals(randomName, "Faktor");
     }
 
-    @org.junit.jupiter.api.Test
-    void testRandomBoyName() {
+
+
+        @org.junit.jupiter.api.Test
+        void randomName() {
+            Algorithms1 a = new Algorithms1();
+            String name = a.randomName();
+
+            assertEquals("Pop",name);
+
+        }
     }
-}
+
+
+

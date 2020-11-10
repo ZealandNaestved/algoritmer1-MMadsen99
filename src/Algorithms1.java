@@ -27,9 +27,9 @@ public class Algorithms1 {
     // TODO 8 - Skriv en  plet eller krone generator metode (plet er boolean true og krone er boolean false)
 
     public static void main(String[] args) {
-        exampleOfPredictableRandomNumber();
-        randomBoyName();
-        randomGirlName();
+        //exampleOfPredictableRandomNumber();
+       // randomBoyName();
+       // randomGirlName();
         randomName();
     }
 
@@ -72,6 +72,9 @@ public class Algorithms1 {
     // TODO 5 - Skriv en randomName()  metode i Algorithms1, som laver et sammenlagt array som indeholder både piger og drenge, og returnerer det
 
     public static String randomName(){
+        Random rand = new Random();
+        rand.setSeed(40); // vi sætter et seed så den udskriver det samme navn hver gang, så kan vi nemlig lave test på det
+        int randomTal = rand.nextInt(90); // random tal
         Data data = new Data();
         int index = 0;
         String[] bothArrays = new String[data.getRandomDrengeNavne().length + data.getRandomPigeNavne().length];
@@ -87,12 +90,14 @@ public class Algorithms1 {
             index++;
              }
 
-        System.out.println(Arrays.toString(bothArrays));
+        System.out.println(bothArrays[randomTal]);
 
         return null;
     }
 
 
 }
+
+// TODO 6 - Skriv en test til randomName() metoden
 
 
