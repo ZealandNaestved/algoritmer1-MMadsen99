@@ -16,9 +16,9 @@ class Algorithms1Test {
         @org.junit.jupiter.api.Test
         void randomName() {
             Algorithms1 a = new Algorithms1();
-            String name = a.randomName();
+            String name = a.randomName(); //Problem name undeholder ikke et navn det indeholder null, selvom randomname() souter navnet Pop i Algorithms1
 
-            assertEquals("Pop",name);
+            assertEquals(name, "Pop");
 
         }
     }
