@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -29,6 +30,7 @@ public class Algorithms1 {
         exampleOfPredictableRandomNumber();
         randomBoyName();
         randomGirlName();
+        randomName();
     }
 
     private static void exampleOfPredictableRandomNumber() {
@@ -67,11 +69,30 @@ public class Algorithms1 {
 
     }
 
-    // TODO 5 - Skriv en randomName() metode i Algorithms1, som laver et sammenlagt array som indeholder både piger og drenge, og returnerer det
+    // TODO 5 - Skriv en randomName()  metode i Algorithms1, som laver et sammenlagt array som indeholder både piger og drenge, og returnerer det
 
-    public static void randomName() {
-    //
+    public static String randomName(){
+        Data data = new Data();
+        int index = 0;
+        String[] bothArrays = new String[data.getRandomDrengeNavne().length + data.getRandomPigeNavne().length];
 
+
+            for (String element:data.getRandomDrengeNavne()){
+                bothArrays[index] = element;
+                index++;
+            }
+
+            for (String element:data.getRandomPigeNavne()){
+            bothArrays[index] = element;
+            index++;
+             }
+
+        System.out.println(Arrays.toString(bothArrays));
+
+        return null;
     }
 
+
 }
+
+

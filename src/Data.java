@@ -25,6 +25,7 @@ public class Data {
         }
         System.out.print(new Random().nextInt(max));
         System.out.print("}");
+
     }
 
     public int[] getRandomNumbers1000() {
